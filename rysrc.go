@@ -119,7 +119,7 @@ func usage() {
 }
 
 func main() {
-	var tarDir = flag.String("d", os.ExpandEnv("$HOME/ryanTarPkg.tar"), "the dir to save the tar package")
+	var tarDir = flag.String("d", os.ExpandEnv("$HOME/rysrcTarPkg.tar"), "the dir to save the tar package")
 	var fileType = flag.String("f", ".go", "Filetype such as:.c,.c++,.go ")
 	var srcDir = flag.String("s", "../", "src dir to get the source files")
 	var async = flag.Bool("asyn", false, "sync or async to output the tar files, recommand async for huge search")
